@@ -4,8 +4,7 @@
 ## Cartoonify
 - A python applet to add life and a cartoony aspect to your images.
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+)
 
 ## Features
 - Some of the features implemented include:
@@ -15,6 +14,10 @@
 * Auto image enhancement
 
 ## Screenshots
+Cartoonify Feature:
+Original            |  Cartoonified
+:-------------------------:|:-------------------------:
+![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/cristiano.jpg)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Cartoon_Image.jpg)
 <img src="https://github.com/akshatvg/common-entry-test/raw/master/static/img/header.png" alt="Project Screenshots">
 
 ## Instructions to run
@@ -24,6 +27,10 @@ $ cd <Project>
 $ pip3 install -r requirements.txt
 $ python3 /Source Code/main.py
 $ python3 Applet.py
+
+After running the applet 1 for uploading an already existing image and 2 for taking an image through the webcam
+
+Once this is done enter the corresponding changes you want done to the image
 ```
 
 ## Contributors
