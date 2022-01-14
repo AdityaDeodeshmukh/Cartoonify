@@ -3,8 +3,8 @@
 
 ## Cartoonify
 - A python applet to add life and a cartoony aspect to your images.
----
-)
+
+
 
 ## Features
 - Some of the features implemented include:
@@ -14,12 +14,26 @@
 * Auto image enhancement
 
 ## Screenshots
-Cartoonify Feature:
+**Cartoonify Feature:**
 Original            |  Cartoonified
 :-------------------------:|:-------------------------:
-![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/cristiano.jpg)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Cartoon_Image.jpg)
-<img src="https://github.com/akshatvg/common-entry-test/raw/master/static/img/header.png" alt="Project Screenshots">
+![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/cristiano.jpg)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/Cartoon_Image.jpg)
+![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/oval.jpg)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/Cartoon_Image[1].jpg)
 
+
+**Filter Feature:**
+Original            |  With Filter
+:-------------------------:|:-------------------------:
+![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/cris1.jpg)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/Cartoon_Image[4].jpg)
+![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/henry.jpg)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/Cartoon_Image[5].jpg)
+
+**Bug that I have declared as a feature:**
+<br>
+If you use a PNG image with depth as 8 bits then you get a very interesting effect due to the way the image is converted to an array
+Original            |  With Filter
+:-------------------------:|:-------------------------:
+![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/Avatar.png)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/Cartoon_Image[2].jpg)
+![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/city.png)  |  ![](https://github.com/AdityaDeodeshmukh/Cartoonify/blob/master/Screenshots/Cartoon_Image[3].jpg)
 ## Instructions to run
 ```
 $ git clone https://github.com/CodeChefVIT/Cartoonify
