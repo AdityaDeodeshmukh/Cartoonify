@@ -8,7 +8,7 @@ def AddMoustache(cartoonimg,img):
     
     faces=face_cascade.detectMultiScale(grey,1.15,5)
     nose=nose_cascade.detectMultiScale(grey,1.2,5)
-    
+    added_image=cartoonimg
 
     for (x, y, w, h) in faces:
             blue_ch, green_ch, red_ch = cv2.split(cartoonimg)
@@ -47,8 +47,9 @@ def AddMoustache(cartoonimg,img):
                             added_image[i][j]=img1[i][j]
                         else:
                             added_image[i][j]=must_resized[i][j]
+                cartoonimg[y+Ys:y+Ye, x+Xs:x+Xe] = added_image
                 break
-            cartoonimg[y+Ys:y+Ye, x+Xs:x+Xe] = added_image
+            
             blue_ch, green_ch, red_ch,alpha_ch = cv2.split(cartoonimg)
             cartoonimg = cv2.merge((blue_ch, green_ch, red_ch))
     return(cartoonimg)

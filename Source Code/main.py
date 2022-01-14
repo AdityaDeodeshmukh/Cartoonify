@@ -20,12 +20,9 @@ def CartoonifyImage():
     file=request.files['image']
     rec_img=Image.open(file.stream)
     img = cv2.cvtColor(np.array(rec_img), cv2.COLOR_RGB2BGR)
+    
     k=json.load(request.files['data'])
- 
     cartoonimg=img
-    
-    
-    
     cartoonimg=Brightness_contrast(cartoonimg,k["Brightness"],k["Contrast"])
     if(k["Edgify"]==1):
         cartoonimg=getedges(cartoonimg)

@@ -6,6 +6,8 @@ def AddMonocle(cartoonimg,img):
     grey=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     faces=face_cascade.detectMultiScale(grey,1.15,5)
     for (x, y, w, h) in faces:
+            print(cartoonimg)
+            
             blue_ch, green_ch, red_ch = cv2.split(cartoonimg)
             alpha_ch = np.ones(blue_ch.shape, dtype=blue_ch.dtype) *0.01
             alpha_ch=alpha_ch.astype(np.uint8)
@@ -26,7 +28,17 @@ def AddMonocle(cartoonimg,img):
                             added_image[i][j]=flare_resized[i][j]
                 
                 cartoonimg[y+ey:y+ey+h1, x+ex:x+ex+w1] = added_image
-                blue_ch, green_ch, red_ch,alpha_ch = cv2.split(cartoonimg)
-                cartoonimg = cv2.merge((blue_ch, green_ch, red_ch))
+                
                 break
+            blue_ch, green_ch, red_ch,alpha_ch = cv2.split(cartoonimg)
+            cartoonimg = cv2.merge((blue_ch, green_ch, red_ch))
+    try:
+        blue_ch, green_ch, red_ch,alpha_ch = cv2.split(cartoonimg)
+        cartoonimg = cv2.merge((blue_ch, green_ch, red_ch))
+    
+    except:
+        pass
+    
+
+    
     return cartoonimg
