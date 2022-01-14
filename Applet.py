@@ -6,7 +6,7 @@ import time
 from PIL import Image
 import cv2
 def sendToServer(filename):
-    config={};
+    config={}
     config["Brightness"]=float(input("How much do you want to increase brightness:"))
     config["Contrast"]=float(input("How much do you want to increase contrast:"))
     config["Edgify"]=int(input("Do you want to edgify the image(1:Yes/0:No):"))
@@ -44,7 +44,7 @@ def Webcam():
     webcm=int(input("What webcam do you want to use(Integers only):"))
     cap=cv2.VideoCapture(webcm, cv2.CAP_DSHOW)    
     
-    startTime=0;
+    startTime=0
     font=cv2.FONT_HERSHEY_COMPLEX
     while(True):
         ret,frame=cap.read()
@@ -78,7 +78,7 @@ def Webcam():
     cap.release()
 
 def UploadSave():
-    filename=int(input("Enter the name of the file(Should be in this folder and specify the file type)"))
+    filename=input("Enter the name of the file(Should be in this folder and specify the file type):")
     sendToServer(filename)
 
 typ=int(input("Enter 1 for uploading an image in PC, 2 for uploading through webcam"))

@@ -25,15 +25,10 @@ def CartoonifyImage():
     cartoonimg=img
     
     
-    if(img.shape[0]>=800 or img.shape[1]>=800):
-        cartoonimg=Brightness_contrast(cartoonimg,k["Brightness"]+0.1,k["Contrast"])
-        if(k["Edgify"]==1):
-            cartoonimg=getedges(cartoonimg)
-    else:
-        cartoonimg=adjust_brightness(cartoonimg,k["Brightness"]+0.1)
-        if(k["Edgify"]==1):
-            cartoonimg=edge(cartoonimg)
-            cartoonimg=cartoon(cartoonimg)
+    
+    cartoonimg=Brightness_contrast(cartoonimg,k["Brightness"],k["Contrast"])
+    if(k["Edgify"]==1):
+        cartoonimg=getedges(cartoonimg)
 
     
     if(k["Monocle"]==1):
